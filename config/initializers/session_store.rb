@@ -1,3 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-Countdown::Application.config.session_store :cookie_store, key: '_countdown_session'
+Rails.application.config.session_store :cookie_store, key: '_ruby-getting-started_session'

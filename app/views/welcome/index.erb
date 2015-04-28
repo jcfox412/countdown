@@ -1,0 +1,44 @@
+
+
+<style type="text/css">
+	#countdown { 
+		width: 500px;
+		height: 100px;
+		margin-left: auto;
+    	margin-right: auto;
+    	padding: 0px;
+	}
+</style>
+
+<script type="text/javascript">
+ //  $('[data-countdown]').each(function() {
+ //   var $this = $(this), finalDate = $(this).data('countdown');
+ //   $this.countdown(finalDate, function(event) {
+ //     $this.html(event.strftime('%D days %H:%M:%S'));
+ //   });
+ // });
+
+	// $('#clock').countdown('2020/10/10', function(event) {
+	// 	$(this).html(event.strftime('%D days %H:%M:%S'));
+	// });
+
+
+$(document).ready(function(){
+	var austDay = new Date(2015, 5 - 1, 6);
+	// austDay = new Date(austDay.getFullYear() + 2, 1 - 1, 26);
+	$('#countdown').countdown({until: austDay});
+});
+
+// $(document).ready(function(){
+//     $("div").click(function(){
+//         $(this).hide();
+//     });
+// });
+</script>
+<!-- <p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p> -->
+<!-- <div id="defaultCountdown" data-countdown="2016/01/01"></div> -->
+<div id="countdown">
+	<!-- <span id="clock"></span> -->
+</div>
